@@ -1,0 +1,10 @@
+services:  
+  LicenseSrvProxyRpute:  
+    image: nginx:latest  
+    network_mode: "host"
+    container_name: licensesrvproxyrpute  
+    ports:  
+      - portNum
+    volumes:  
+      - ./conf:/etc/nginx/conf.d/ 
+    restart: always  
